@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driverLoginSingup"
+    android:background="@drawable/taxi">
+
+
+    <TextView
+        android:id="@+id/driverStatus"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="DRIVERS SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#ff12b6"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bungee_hairline" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="3dp"
+        android:alpha="0.5"
+        android:background="@drawable/round_left"
+        android:text="Choose"
+        android:visibility="visible" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fdfefe"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#02E7E2E2"
+            android:hint="Enter your name"
+            android:inputType="textShortMessage"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_margin ="15dp"
+            android:backgroundTint="#02E7E2E2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email id"
+            android:inputType="textEmailAddress"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_margin ="15dp"
+            android:backgroundTint="#02E7E2E2"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone no."
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/carName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#02E7E2E2"
+            android:hint="Enter your car name/No."
+            android:inputType="textShortMessage"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#02E7E2E2"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:password="true"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:alpha="0.7"
+            android:layout_margin="15dp"
+            android:text="Sign In" />
+
+    </LinearLayout>
+
+</RelativeLayout>

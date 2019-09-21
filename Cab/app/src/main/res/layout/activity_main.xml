@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cab"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_marginTop="10dp"
+        android:text="CHOOSE"
+        android:textAlignment="center"
+        android:textColor="#fdfefe"
+        android:textSize="75dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bungee_hairline" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/driver"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="150dp"
+        android:onClick="driverclick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/taxidriver"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fdfefe"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/traveler"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="350dp"
+        android:onClick="travelerclick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/traveler"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fdfefe"
+        />
+
+</RelativeLayout>

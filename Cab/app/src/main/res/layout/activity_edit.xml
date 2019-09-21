@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editActivity"
+    android:background="@drawable/edit">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="10dp"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#111"
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/change_picture_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:text="Change Picture"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="#00574B"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:orientation="vertical"
+                android:layout_marginTop="220dp"
+                android:scaleType="centerCrop">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Enter your name"
+                    android:inputType="textShortMessage"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_below="@+id/name"
+                    android:layout_margin ="15dp"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your phone no."
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/driver_car_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="your Car Name/No."
+                    android:layout_below="@+id/phone_number"
+                    android:layout_margin="15dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/saveButton"
+                android:src="@drawable/save_edited_info"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fdfefe"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/closeButton"
+                android:src="@drawable/close"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fdfefe"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

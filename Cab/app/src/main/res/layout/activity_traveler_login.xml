@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TravelerLoginActivity"
+    android:background="@drawable/cab">
+
+
+    <androidx.cardview.widget.CardView
+        android:elevation="10dp"
+        android:layout_margin="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_marginTop="3dp"
+        android:text="TRAVELER LOG IN"
+        android:textAlignment="center"
+        android:textColor="#ff12b6"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/bungee_hairline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="109dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            app:srcCompat="@drawable/traveler" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="25dp"
+            android:hint="Enter your email id"
+            android:inputType="textEmailAddress"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="25dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:password="true"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/buttonLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_corner"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="15dp"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/textviewSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New User!!!? Register here"
+            android:textAlignment="center"
+            android:textColor="#E42828" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
